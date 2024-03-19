@@ -26,5 +26,6 @@ const showResult = ()=>{
 
 //removeLast
 const removeLast = ()=>{
+    console.log("Delete Operation");
    calcScreen.value = calcScreen.value.slice(0,-1)
 }
