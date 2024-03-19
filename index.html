@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="./calcStyle.css">
+</head>
+
+<body>
+    <h1 class="mt-5" style="text-align: center;color: white;">Calculator</h1>
+     <div class=" calc-body mt-5">
+
+                <!-- Calculator Display Screen -->
+                <div class="calc-screen">
+                    <div id="calc-typed">
+                        <input id="calcScreen" placeholder="0"  type="text" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <!-- Calculator Buttons -->
+                <div class="calc-button-row">
+                    
+                    <button onclick="displayContent('7')" id="seven">7</button>
+                    <button id="eight" onclick="displayContent('8')">8</button>
+                    <button id="nine" onclick="displayContent('9')">9</button>
+                    <button id="mul"  class="opt" onclick="displayContent('*')">&#215;</button>
+                    <button id="four" onclick="displayContent('4')">4</button>
+                    <button id="five" onclick="displayContent('5')">5</button>
+                    <button id="six" onclick="displayContent('6')">6</button>
+                    <button id="sub"  class="opt" onclick="displayContent('-')">&#8722;</button>
+                    <button id="one" onclick="displayContent('1')">1</button>
+                    <button id="two" onclick="displayContent('2')">2</button>
+                    <button id="three" onclick="displayContent('3')">3</button>
+                    <button id="add"  class="opt" onclick="displayContent('+')">&#43;</button>
+                    <button id="ac" class="ac" onclick="clearAllContent()">AC</button>
+                    <button id="zero" class="opt" onclick="displayContent('0')">0</button>
+                    <button id="div"  class="opt" onclick="displayContent('/')">&#247;</button>
+                    <button id="equal"  class="opt" onclick="showResult()">&#61;</button>
+                    <button id="del"  onclick="removeLast()">&#9003;</button>
+
+                </div>
+            </div>
+</body>
+<!-- external js  -->
+<script src="./main.js"></script>
+</html>
